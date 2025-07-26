@@ -14,6 +14,11 @@
 }
 
 .page {
+<<<<<<< HEAD
+=======
+  padding: 0;
+  margin: 0;
+>>>>>>> aef75a6 (slozho 2)
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
@@ -21,14 +26,23 @@
   background-repeat: no-repeat;
   font-family: "IBMPlexMono-Regular", sans-serif;
   background-color: #040434;
+<<<<<<< HEAD
   margin: 10px;
 
+=======
+  margin: 0 10px;
+  margin-block-start: 10px;
+>>>>>>> aef75a6 (slozho 2)
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
 /*
 Шапка
 */
+<<<<<<< HEAD
+=======
+
+>>>>>>> aef75a6 (slozho 2)
 .header {
   block-size: 100vh;
   min-block-size: 668px;
@@ -36,12 +50,20 @@
   grid-template-rows: 1fr min-content 1fr;
   position: relative;
   box-sizing: border-box;
+<<<<<<< HEAD
+=======
+
+>>>>>>> aef75a6 (slozho 2)
 }
 
 .header__theme-menu {
   justify-self: end;
   margin-block-start: 47px;
   color: var(--header-list-color);
+<<<<<<< HEAD
+=======
+
+>>>>>>> aef75a6 (slozho 2)
 }
 
 .header__theme-menu-list {
@@ -67,9 +89,13 @@
 }
 
 .header__theme-menu-button:hover {
+<<<<<<< HEAD
 
   border: solid currentColor 1px;
 
+=======
+  border: solid currentColor 1px;
+>>>>>>> aef75a6 (slozho 2)
 }
 
 .header__theme-menu-button:focus-visible {
@@ -136,6 +162,11 @@
   font-weight: 700;
   line-height: 83%;
   margin-block-end: 10px;
+<<<<<<< HEAD
+=======
+  padding-block-end: 10px;
+
+>>>>>>> aef75a6 (slozho 2)
 }
 
 .title-decor {
@@ -144,7 +175,11 @@
   line-height: 23.4px;
   block-size: max-content;
   margin: 0;
+<<<<<<< HEAD
   margin-block-start: 40px;
+=======
+  margin-block-start: 35px;
+>>>>>>> aef75a6 (slozho 2)
   color: var(--title-decor-text-color);
 
 }
@@ -221,7 +256,10 @@ img {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+<<<<<<< HEAD
   padding: 10px;
+=======
+>>>>>>> aef75a6 (slozho 2)
 }
 
 .footer.decorated-zone::before {
@@ -248,12 +286,20 @@ img {
 
 p.heading {
   text-shadow: 2px 2px 0 var(--accent-color);
+<<<<<<< HEAD
 
+=======
+  margin-block-start: 8px;
+>>>>>>> aef75a6 (slozho 2)
 }
 
 @media (min-width: 768px) {
   .page {
+<<<<<<< HEAD
     margin: 20px;
+=======
+    margin: 20px 20px 0 20px;
+>>>>>>> aef75a6 (slozho 2)
   }
 
   .header {
@@ -268,7 +314,11 @@ p.heading {
   h1.heading {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -22px;
+<<<<<<< HEAD
     margin-block-end: 35px;
+=======
+    margin-block-end: 25px;
+>>>>>>> aef75a6 (slozho 2)
   }
 
   .header .title-decor {
@@ -369,6 +419,7 @@ p.heading {
   .pictures_container img:nth-child(5) {
     grid-row: 3;
     grid-column: 2/4;
+<<<<<<< HEAD
 
   }
 
@@ -459,3 +510,121 @@ p.heading {
     }
 
   }
+=======
+  }
+
+  .footer {
+    margin-block-start: 80px;
+    block-size: 100vh;
+    min-block-size: 1024px;
+  }
+
+  .footer .heading {
+    margin-block-end: 35px;
+  }
+
+  .footer.decorated-zone::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    border-bottom: solid var(--decorated-zone-color) 1px;
+    border-left: solid var(--decorated-zone-color) 1px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header {
+    min-block-size: 768px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    margin-block-start: 0;
+    margin-inline-start: 0;
+  }
+
+  .header__theme-menu-list {
+    padding: 0;
+    display: flex;
+    align-items: start;
+    margin: 0;
+
+  }
+
+  .heading {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+
+  }
+
+  .header .title-decor {
+    inline-size: 491px;
+    justify-self: end;
+    margin-block-start: 75px;
+  }
+
+  .heading-cards {
+    margin: 0;
+    margin-block-end: 20px;
+    inline-size: 315px;
+  }
+
+  .card:nth-child(1) {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    gap: 20px;
+  }
+
+  .card:nth-child(2) .card_container {
+    display: grid;
+    grid-template-columns: repeat(3, 315px);
+    gap: 20px;
+  }
+
+  .card:nth-child(3) {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    gap: 20px;
+  }
+
+  .pictures_container {
+    grid-template-columns: 315px 315px 314px;
+    grid-template-rows: 260px 315px 433px;
+  }
+
+  .footer {
+    block-size: 100vh;
+    min-block-size: 768px;
+
+  }
+
+  .footer .heading {
+    margin-block-end: 6
+  }
+
+  .footer.decorated-zone::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 23px;
+    height: 23px;
+    border-top: solid var(--decorated-zone-color) 1px;
+    border-right: solid var(--decorated-zone-color) 1px;
+  }
+
+  .footer.decorated-zone::after {
+    content: "";
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 23px;
+    height: 23px;
+    border-bottom: solid var(--decorated-zone-color) 1px;
+    border-left: solid var(--decorated-zone-color) 1px;
+  }
+
+}
+>>>>>>> aef75a6 (slozho 2)
