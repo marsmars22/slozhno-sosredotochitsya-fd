@@ -6,20 +6,35 @@
 
 :root.theme-light {
   --background-color: #f1b2ce;
-  --heading-text-color:#FFC2E6;
-  --accent-color:#FF8DCB;
-  --title-decor-bg-color:#FF8DCB;
-  --title-decor-text-color:#353430;
-  --card-text-color:#353430;
-  --heading-cards:#353430;
-  --header-list-color:#353430;
-  --decorated-zone-color:#353430;
+  --heading-text-color: #FFC2E6;
+  --accent-color: #FF8DCB;
+  --title-decor-bg-color: #FF8DCB;
+  --title-decor-text-color: #353430;
+  --card-text-color: #353430;
+  --heading-cards: #353430;
+  --header-list-color: #353430;
+  --decorated-zone-color: #353430;
 }
 
 .theme-light .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
   --background-image: url(../images/cover-image-light.png);
 }
+
 .theme-light .rec-label {
   display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-light {
+    --background-color: #f1b2ce;
+    --heading-text-color: #FFC2E6;
+    --accent-color: #FF8DCB;
+    --title-decor-bg-color: #FF8DCB;
+    --title-decor-text-color: #353430;
+    --card-text-color: #353430;
+    --heading-cards: #353430;
+    --header-list-color: #353430;
+    --decorated-zone-color: #353430;
+  }
 }

@@ -2,7 +2,7 @@
 @font-face {
   font-family: "IBMPlexMono-Bold";
   src: url(../fonts/IBMPlexMono-Bold.woff);
-  font-style: bold;
+  font-style: normal;
   font-weight: bold;
 }
 
@@ -14,6 +14,7 @@
 }
 
 .page {
+  font-family: "IBMPlexMono-Regular", sans-serif;
   padding: 0;
   margin: 0;
   background-image: var(--background-image);
@@ -21,7 +22,6 @@
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: "IBMPlexMono-Regular", sans-serif;
   background-color: #040434;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
@@ -142,6 +142,7 @@ a:focus-visible {
 }
 
 .heading {
+  font-family: IBMPlexMono-Bold, sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--heading-text-color);
   margin: 0;
@@ -150,7 +151,7 @@ a:focus-visible {
   font-weight: 700;
   line-height: 83%;
   margin-block-end: 18px;
-  font-family: IBMPlexMono-Bold, sans-serif;
+
 }
 
 .title-decor {
@@ -177,10 +178,10 @@ a:focus-visible {
 }
 
 .heading-cards {
+  font-family: IBMPlexMono-Bold, sans-serif;
   font-size: 18px;
   color: var(--heading-cards);
   margin: 0;
-  font-family: IBMPlexMono-Bold, sans-serif;
   line-height: 23.4px;
 }
 
@@ -191,11 +192,12 @@ a:focus-visible {
 }
 
 .card-text {
+  font-family: IBMPlexMono-Regular, sans-serif;
   line-height: 23.4px;
   color: var(--card-text-color);
   margin: 0;
   margin-block-start: 10px;
-  font-family: IBMPlexMono-Regular, sans-serif;
+
 
 }
 
