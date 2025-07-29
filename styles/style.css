@@ -107,6 +107,7 @@ a:focus-visible {
   top: 1px;
   right: 7px;
   text-transform: uppercase;
+  display: var(--rec-display);
 }
 
 .rec-label::after {

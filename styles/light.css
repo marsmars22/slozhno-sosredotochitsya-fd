@@ -26,7 +26,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root {
     --background-color: #f1b2ce;
     --heading-text-color: #FFC2E6;
     --accent-color: #FF8DCB;
@@ -36,5 +36,6 @@
     --heading-cards: #353430;
     --header-list-color: #353430;
     --decorated-zone-color: #353430;
+    --background-image: url(../images/cover-image-light.png);
+    --rec-display: none;
   }
-}
