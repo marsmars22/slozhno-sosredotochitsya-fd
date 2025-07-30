@@ -14,6 +14,8 @@
   --heading-cards: #353430;
   --header-list-color: #353430;
   --decorated-zone-color: #353430;
+  --background-image: url(../images/cover-image-light.png);
+
 }
 
 .theme-light .page {
@@ -38,4 +40,6 @@
     --decorated-zone-color: #353430;
     --background-image: url(../images/cover-image-light.png);
     --rec-display: none;
+
   }
+}

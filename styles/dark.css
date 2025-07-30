@@ -6,15 +6,16 @@
 
 :root.theme-dark {
   --background-image: url(../images/cover-image-dark.png);
-  --heading-text-color:#DB00FF;
-  --background-color:#040434;
-  --accent-color:#ff0070;
-  --card-text-color:#F1B2CE;
-  --title-decor-text-color:#000028;
-  --title-decor-bg-color:#FF0070;
-  --heading-cards:#ff0070;
-  --header-list-color:#ff0070;
-  --decorated-zone-color:#ff0070;
+  --heading-text-color: #DB00FF;
+  --background-color: #040434;
+  --accent-color: #ff0070;
+  --card-text-color: #F1B2CE;
+  --title-decor-text-color: #000028;
+  --title-decor-bg-color: #FF0070;
+  --heading-cards: #ff0070;
+  --header-list-color: #ff0070;
+  --decorated-zone-color: #ff0070;
+  --rec-display: inline;
 }
 
 .theme-dark .page {
