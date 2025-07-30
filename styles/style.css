@@ -64,19 +64,20 @@ a:focus-visible {
 }
 
 .header__theme-menu-list {
+  font-size: 18px;
   display: grid;
   list-style: none;
   gap: 13px;
-  font-size: 18px;
+
   justify-items: center;
 
 }
 
 .header__theme-menu-button {
+  font: inherit;
   background: none;
   border: none;
   margin: 0;
-  font: inherit;
   cursor: pointer;
   text-transform: lowercase;
   color: var(--accent-color);
@@ -101,9 +102,9 @@ a:focus-visible {
 }
 
 .rec-label {
+  font-size: 18px;
   position: absolute;
   color: #ff0070;
-  font-size: 18px;
   top: 1px;
   right: 7px;
   text-transform: uppercase;
@@ -145,11 +146,11 @@ a:focus-visible {
 .heading {
   font-family: IBMPlexMono-Bold, sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
   color: var(--heading-text-color);
   margin: 0;
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
-  font-weight: 700;
   line-height: 83%;
   margin-block-end: 18px;
 
@@ -157,8 +158,8 @@ a:focus-visible {
 
 .title-decor {
   font-family: IBMPlexMono-Bold, sans-serif;
-  background-color: var(--title-decor-bg-color);
   font-size: 18px;
+  background-color: var(--title-decor-bg-color);
   line-height: 23.4px;
   block-size: max-content;
   color: var(--title-decor-text-color);
@@ -170,9 +171,9 @@ a:focus-visible {
 }
 
 .cards {
+  font-size: 18px;
   display: flex;
   flex-direction: column;
-  font-size: 18px;
   margin: 0 10px;
   margin-block-start: 30px;
   gap: 50px;
@@ -187,9 +188,9 @@ a:focus-visible {
 }
 
 .heading-card {
+  font-weight: 700;
   margin: 0;
   margin-block-start: 20px;
-  font-weight: 700;
 }
 
 .card-text {
@@ -204,8 +205,8 @@ a:focus-visible {
 
 h4 {
   font-family: IBM Plex Mono, sans-serif;
-  background-color: var(--title-decor-bg-color);
   font-weight: normal;
+  background-color: var(--title-decor-bg-color);
   color: var(--title-decor-text-color);
   margin: 0;
   margin-block-start: 20px;
