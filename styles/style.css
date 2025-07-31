@@ -1,18 +1,3 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-@font-face {
-  font-family: "IBMPlexMono-Bold";
-  src: url(../fonts/IBMPlexMono-Bold.woff);
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "IBMPlexMono-Regular";
-  src: url(../fonts/IBMPlexMono-Regular.woff);
-  font-style: normal;
-  font-weight: normal;
-}
-
 .page {
   font-family: "IBMPlexMono-Regular", sans-serif;
   padding: 0;
