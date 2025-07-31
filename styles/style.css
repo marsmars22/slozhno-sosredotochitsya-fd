@@ -58,7 +58,7 @@ a:focus-visible {
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 47px;
+  margin-block-start: 65px;
   color: var(--header-list-color);
 
 }
@@ -285,7 +285,7 @@ p.heading {
   }
 
   .header__theme-menu {
-    margin-block-start: 155px;
+    margin-block-start: 170px;
   }
 
   .header .heading {
