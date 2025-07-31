@@ -1,3 +1,18 @@
+/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+@font-face {
+  font-family: "IBM Plex mono";
+  src: url(./IBMPlexMono-Regular.woff) format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "IBM Plex mono";
+  src: url(./IBMPlexMono-Bold.woff) format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
 .page {
   font-family: "IBMPlexMono-Regular", sans-serif;
   padding: 0;
