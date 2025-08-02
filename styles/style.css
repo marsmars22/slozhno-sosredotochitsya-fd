@@ -1,45 +1,16 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-@font-face {
-  font-family: "IBMPlexMono-Bold";
-  src: url(../fonts/IBMPlexMono-Bold.woff);
-  font-style: normal;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "IBMPlexMono-Regular";
-  src: url(../fonts/IBMPlexMono-Regular.woff);
-  font-style: normal;
-  font-weight: normal;
-}
-
 .page {
-  font-family: "IBMPlexMono-Regular", sans-serif;
+  font-family: "IBM Plex mono", sans-serif;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   background-image: var(--background-image);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-color: var(--background-color);
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 }
 
-a {
-  color: var(--card-text-color);
-  all: unset;
-  text-shadow: 2px 2px 0 #ff0070;
-}
 
-a:hover {
-  text-decoration: underline;
-  text-decoration-color: currentColor;
-}
-
-a:focus-visible {
-  border: solid currentColor 1px;
-}
 
 /*
 Шапка
@@ -50,15 +21,14 @@ a:focus-visible {
   min-block-size: 668px;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
-  position: relative;
   box-sizing: border-box;
-  margin: 10px 10px 0 10px;
+  padding: 0 10px;
 
 }
 
 .header__theme-menu {
   justify-self: end;
-  margin-block-start: 65px;
+  margin-block-start: 75px;
   color: var(--header-list-color);
 
 }
@@ -68,7 +38,6 @@ a:focus-visible {
   display: grid;
   list-style: none;
   gap: 13px;
-
   justify-items: center;
 
 }
@@ -80,7 +49,6 @@ a:focus-visible {
   margin: 0;
   cursor: pointer;
   text-transform: lowercase;
-  color: var(--accent-color);
   padding: 0px 12px;
 }
 
@@ -105,46 +73,52 @@ a:focus-visible {
   font-size: 18px;
   position: absolute;
   color: #ff0070;
-  top: 1px;
-  right: 7px;
+  top: 10px;
+  right: 40px;
   text-transform: uppercase;
   display: var(--rec-display);
 }
 
-.rec-label::after {
-  content: "";
-  display: inline-block;
-  block-size: 12px;
-  inline-size: 12px;
-  background-color: #ff0070;
-  border-radius: 50%;
-  margin-inline-start: 10px;
+.decorated-zone {
+  position: relative;
 }
 
-.header.decorated-zone::before {
+.decorated-zone::before, .decorated-zone::after {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 23px;
-  height: 23px;
+  inline-size: 23px;
+  block-size: 23px;
+
+}
+
+.rec-label::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  block-size: 9px;
+  inline-size: 9px;
+  background-color: #ff0070;
+  border-radius: 50%;
+  margin-inline-start: 11px;
+  margin-block-start: 8px;
+  box-shadow: 0px 0px 4px 2px rgba(255, 0, 112, 1);
+}
+
+.decorated-zone::before {
+  top: 10px;
+  right: 10px;
   border-top: solid var(--decorated-zone-color) 1px;
   border-right: solid var(--decorated-zone-color) 1px;
 }
 
-.header.decorated-zone::after {
-  content: "";
-  position: absolute;
-  bottom: 20px;
-  left: 0;
-  width: 23px;
-  height: 23px;
+.decorated-zone::after {
+  bottom: 10px;
+  left: 10px;
   border-block-end: solid var(--decorated-zone-color) 1px;
   border-inline-start: solid var(--decorated-zone-color) 1px;
 }
 
 .heading {
-  font-family: IBMPlexMono-Bold, sans-serif;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   color: var(--heading-text-color);
@@ -152,12 +126,11 @@ a:focus-visible {
   text-transform: lowercase;
   text-shadow: 4px 4px 0 var(--accent-color);
   line-height: 83%;
-  margin-block-end: 18px;
+
 
 }
 
 .title-decor {
-  font-family: IBMPlexMono-Bold, sans-serif;
   font-size: 18px;
   background-color: var(--title-decor-bg-color);
   line-height: 23.4px;
@@ -167,20 +140,20 @@ a:focus-visible {
 }
 
 .header .title-decor {
-  margin-block-start: 36px;
+  margin-block-start: 55px;
 }
 
-.cards {
-  font-size: 18px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 10px;
-  margin-block-start: 30px;
+main {
+  display: grid;
   gap: 50px;
+  padding: 0 10px;
+}
+
+.card__why {
+  margin-block-start: 40px;
 }
 
 .heading-cards {
-  font-family: IBMPlexMono-Bold, sans-serif;
   font-size: 18px;
   color: var(--heading-cards);
   margin: 0;
@@ -191,34 +164,23 @@ a:focus-visible {
   font-weight: 700;
   margin: 0;
   margin-block-start: 20px;
+  margin-block-end: 10px;
 }
 
 .card-text {
-  font-family: IBMPlexMono-Regular, sans-serif;
+  font-size: 18px;
   line-height: 23.4px;
   color: var(--card-text-color);
-  margin: 0;
-  margin-block-start: 10px;
-
-
 }
 
-h4 {
-  font-family: IBM Plex Mono, sans-serif;
-  font-weight: normal;
-  background-color: var(--title-decor-bg-color);
-  color: var(--title-decor-text-color);
+.header-mini {
+  font-size: 18px;
   margin: 0;
   margin-block-start: 20px;
-
+  margin-block-end: 10px;
 }
 
-.pictures {
-  margin: 0 10px;
-  margin-block-start: 50px;
-  max-inline-size: 365px;
-  grid-template-columns: 1fr;
-}
+
 
 .title-pictures {
   margin: 0;
@@ -236,7 +198,8 @@ img {
 }
 
 .footer {
-  margin: 0 10px;
+  margin: 0;
+  padding: 0;
   margin-block-start: 40px;
   position: relative;
   block-size: 100vh;
@@ -245,32 +208,9 @@ img {
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-
 }
 
-.footer.decorated-zone::before {
-  content: "";
-  position: absolute;
-  top: 10px;
-  right: 0;
-  width: 23px;
-  height: 23px;
-  border-top: solid var(--decorated-zone-color) 1px;
-  border-right: solid var(--decorated-zone-color) 1px;
-}
-
-.footer.decorated-zone::after {
-  content: "";
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  width: 23px;
-  height: 23px;
-  border-bottom: solid var(--decorated-zone-color) 1px;
-  border-left: solid var(--decorated-zone-color) 1px;
-}
-
-p.heading {
+.footer .heading {
   margin: 0;
   text-shadow: 2px 2px 0 var(--accent-color);
 
@@ -279,46 +219,66 @@ p.heading {
 @media (min-width: 768px) {
 
   .header {
-    block-size: 100vh;
     min-block-size: 1024px;
-    margin: 20px 20px 0 20px;
+    padding: 0 20px;
+  }
+
+  .heading {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .rec-label {
+    top: 20px;
+    right: 50px;
+  }
+
+  .rec-label::after {
+    margin-inline-start: 12px;
+    margin-block-start: 9px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
   }
 
   .header__theme-menu {
-    margin-block-start: 170px;
+    margin-block-start: 190px;
   }
 
   .header .heading {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
-    margin-block-end: 35px;
   }
 
   .header .title-decor {
     inline-size: 364px;
     justify-self: end;
-    margin-block-start: 125px;
+    margin-block-start: 160px;
   }
 
-  .header.decorated-zone::after {
-    bottom: 40px;
-  }
 
-  .cards {
-    display: grid;
+  main {
+    padding: 0 20px;
     gap: 80px;
-    margin: 0 20px;
-    margin-block-start: 40px;
   }
 
-  .card:nth-child(1) {
+
+  .card__why {
+    margin-block-start: 60px;
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
   }
 
+
   .heading-card {
     margin: 0;
+    margin-block-end: 10px;
 
   }
 
@@ -328,32 +288,33 @@ p.heading {
     margin-block-end: 20px;
   }
 
-  .card_container {
+  .card__container {
     display: grid;
     gap: 20px;
   }
 
-  .card:nth-child(3) {
+  .card__how {
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
   }
 
-  h4 {
-    margin: 0;
+  .card__how .card__container {
+    display: block;
+  }
+
+  .header-mini {
+    margin-block-start: 20px;
+    margin-block-end: 10px;
   }
 
   .pictures {
-    margin: 0 20px;
-    margin-block-start: 80px;
-    max-inline-size: 1024px;
+    margin: 0 auto;
   }
 
-
-
   .pictures_container {
+    max-inline-size: 1024px;
     margin-block-start: 20px;
-    display: grid;
     grid-template-columns: 229px 230px 229px;
     grid-template-rows: 192px 230px 318px;
     gap: 20px;
@@ -362,13 +323,9 @@ p.heading {
   .pictures_container img {
     object-fit: cover;
     height: 100%;
-    width: 100%;
-    display: block;
-
   }
 
   .pictures_container img:nth-child(1) {
-
     grid-row: 1;
     grid-column: 1/3;
   }
@@ -394,63 +351,27 @@ p.heading {
   }
 
   .footer {
-    margin: 0 20px;
+    padding: 0 20px;
     margin-block-start: 60px;
-    block-size: 100vh;
     min-block-size: 1024px;
   }
 
-  p.heading {
-
-    margin: 0;
-    margin-block-start: 5px;
-  }
-
-  .footer.decorated-zone::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 0;
-    width: 23px;
-    height: 23px;
-    border-top: solid var(--decorated-zone-color) 1px;
-    border-right: solid var(--decorated-zone-color) 1px;
-  }
-
-  .footer.decorated-zone::after {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    width: 23px;
-    height: 23px;
-    border-bottom: solid var(--decorated-zone-color) 1px;
-    border-left: solid var(--decorated-zone-color) 1px;
-  }
 }
 
 @media (min-width: 1024px) {
   .header {
     min-block-size: 768px;
-    margin: 20px 20px 0 20px;
   }
 
   .header__theme-menu {
     justify-self: center;
-    margin-block-start: 0;
+    margin-block-start: 20px;
     margin-inline-start: 5px;
-  }
-
-  .heading {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-
-
   }
 
   .header .title-decor {
     inline-size: 491px;
-    justify-self: end;
-    margin-block-start: 75px;
+    margin-block-start: 115px;
   }
 
   .header__theme-menu-list {
@@ -466,22 +387,19 @@ p.heading {
     inline-size: 315px;
   }
 
-  .card:nth-child(1) {
+  .card__why {
+    margin-block-start: 60px;
     display: grid;
     grid-template-columns: 315px 1fr;
     gap: 20px;
   }
 
-  .card:nth-child(2) .card_container {
-    display: grid;
-    grid-template-columns: repeat(3, 315px);
-    gap: 20px;
+  .card__what .card__container {
+    grid-template-columns: 315px 315px 315px;
   }
 
-  .card:nth-child(3) {
-    display: grid;
+  .card__how {
     grid-template-columns: 315px 1fr;
-    gap: 20px;
   }
 
   .pictures_container {
@@ -492,10 +410,8 @@ p.heading {
   .footer {
     block-size: 100vh;
     min-block-size: 768px;
-    margin: 0 20px;
-    margin-block-start: 60px
+    margin-block-start: 60px;
   }
-
 
 
 

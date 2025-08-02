@@ -12,10 +12,11 @@
   --title-decor-text-color: #353430;
   --card-text-color: #353430;
   --heading-cards: #353430;
+  --link-effects: #FF8DCB;
   --header-list-color: #353430;
   --decorated-zone-color: #353430;
   --background-image: url(../images/cover-image-light.png);
-
+  --menu-hover: rgba(50, 49, 45, 0.4);
 }
 
 .theme-light .page {
@@ -40,6 +41,7 @@
     --decorated-zone-color: #353430;
     --background-image: url(../images/cover-image-light.png);
     --rec-display: none;
-
+    --menu-hover: rgba(50, 49, 45, 0.4);
+    --link-effects: #FF8DCB;
   }
 }

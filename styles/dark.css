@@ -16,6 +16,7 @@
   --header-list-color: #ff0070;
   --decorated-zone-color: #ff0070;
   --rec-display: inline;
+  --menu-hover: rgba(255, 0, 112, 0.4);
 }
 
 .theme-dark .page {

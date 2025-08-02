@@ -1,4 +1,8 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
+html {
+  margin: 0;
+  padding: 0;
+}
 
 *,
 *::before,
@@ -36,7 +40,21 @@ picture {
 button,
 a {
   color: currentColor;
+  all: unset;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+}
+
+a {
+  text-shadow: 2px 2px 0 var(--link-effects);
+}
+
+a:hover {
+  border-bottom: 2px solid currentColor;
+}
+
+a:focus-visible {
+  border: solid currentColor 1px;
 }
