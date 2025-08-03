@@ -52,7 +52,7 @@ a {
 }
 
 a:hover {
-  border-bottom: 2px solid currentColor;
+  border-bottom: 1px solid currentColor;
 }
 
 a:focus-visible {
