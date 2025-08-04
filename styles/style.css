@@ -64,9 +64,6 @@
 
 .header__theme-menu-button_active {
   border: solid currentColor 1px;
-  padding: 0px 12px;
-  text-align: center;
-  pointer-events: none;
 }
 
 .rec-label {
@@ -172,6 +169,7 @@ main {
 .card-title {
   margin-block-start: 20px;
   margin-block-end: 10px;
+  font-weight: normal;
 }
 
 
@@ -256,12 +254,14 @@ img {
     gap: 80px;
   }
 
-
-  .card__why {
-    margin-block-start: 60px;
+  .card-grid {
     display: grid;
     grid-template-columns: 236px 1fr;
     gap: 20px;
+  }
+
+  .card__why {
+    margin-block-start: 60px;
   }
 
 
@@ -281,11 +281,6 @@ img {
     gap: 20px;
   }
 
-  .card__how {
-    display: grid;
-    grid-template-columns: 236px 1fr;
-    gap: 20px;
-  }
 
   .card__how .card__container {
     display: block;
@@ -369,16 +364,13 @@ img {
     inline-size: 315px;
   }
 
-  .card__why {
+  .card-grid {
     grid-template-columns: 315px 1fr;
   }
+
 
   .card__what .card__container {
     grid-template-columns: repeat(3, 1fr)
-  }
-
-  .card__how {
-    grid-template-columns: 315px 1fr;
   }
 
 
